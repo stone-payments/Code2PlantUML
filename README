@@ -1,0 +1,29 @@
+################################################################################
+This is a dot(not implemented yet) and puml file generator using ctags to use
+with graphviz and plantuml.
+
+to generate a plantuml graph:
+
+1-put the plantuml.jar in this directory!
+
+2-change the path for your source and subdir with project in run.sh:
+
+FULL_PATH=<put the full path to your source>
+GenPuml <subdir of FULL_PATH with the project to analise>
+
+then to generate all png images with class relationship:
+./run.sh
+
+
+################################################################################
+You can also:
+
+to format main.cpp with Mozilla style:
+./run.sh Format
+
+to remove all generated files:
+./run.sh Clean
+
+to just build with Release or Debug:
+./run.sh Release
+./run.sh Debug
